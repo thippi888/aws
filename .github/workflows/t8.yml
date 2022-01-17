@@ -4,9 +4,8 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-    name: Check the contents of the file
-    runs-on: ubuntu-latest
+  example-job:
     steps:
-      - uses: actions/checkout@v1
-      - run: cat C:\git0117\sample.txt
+      - name: Run build script
+        run: ./.github/scripts/checkFirl.sh
+        shell: bash
