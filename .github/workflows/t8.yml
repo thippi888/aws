@@ -1,6 +1,7 @@
 name: Access files
 on:
   push:
+    branches: [ main ]
 
 jobs:
   build:
@@ -8,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 
-      - run: cat sample2.txt
+      - run: cat sample.txt
