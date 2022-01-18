@@ -1,7 +1,9 @@
 #!/bin/sh
 
-FILE1="test.txt"
+filepath="C:\git0117\.git\hooks\commit-msg2.sample"
 
-if[ ! -e $FILE ];then
- curl https://raw.githubusercontent.com/thippi888/aws/main/test.txt>>hook1.test
+if  [ ! -e filepath ]; then
+
+curl -o ./te.txt "https://raw.githubusercontent.com/thippi888/aws/main/test.txt"
+
 fi
